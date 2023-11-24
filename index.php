@@ -1,73 +1,70 @@
 <?php
-
-$anas = 15;
-$ahmed = 15;
-if($anas<$ahmed){
-    echo"hello ahmed";
-        echo"<br>";
-    }
-    elseif($anas>20){
-        echo"hello anoos ";
-    }
-    else
-    echo"not found"; 
-echo"<br>";
-    //if,elseif,else//
-    $boys = array("anas","ahmed","nader");
-    var_dump($boys
-    );
-    echo"<br>";
-
-    if("nadr">=2555)
-   { echo"hello anas";}
-else echo"yes you can";
-//another example//
-echo"<br>";
-$page = "ahmed";
-if($page == "ahmed");
-{echo"ahmed";}
-//if we chane the value "ahmed " to any another object we will print that//
-echo"<br>";
-//example for switch//
-$days = "ff";
-switch($days){
-    case ("sat"):
-        echo"hi it's saterday";
-        break;
-        case"sund";
-    echo"hi it's sunday";
-    break;
-    default:
-    echo"notfound";     }
-    echo"<br>";
-    //LOOP FOR EXAMPLE//
-    for($i=1;$i<50;$i+=5){
-        echo "The number is: $i<br>";
-    };
-    #example for frorach loop......#
-    $colors = array("red" => 20, "green" =>30 , "blue" =>50, "yellow");
-
-        foreach ($colors as $value) {
-      echo "$value <br>";
-    }
-////////
-$animals = ["cats" =>10,"dogs" => 20,"cows" =>30 ];
-foreach ($animals as $sort){
-    echo"$sort.<br>";
+//1- while foor loop
+$a= 1;
+  while ( $a <= 10) {
+  echo "$a<br>";
+  $a++;
 }
-echo"<br>";
-foreach($animals as $sort => $ages){
-    echo"we have alot of $sort of and they are $ages .<br> ";
-}
+// 2-do while for loop 
+$i= 15  ;
+do {
+  echo"$i<br>";
+  $i++;
+} while ($i <= 10);
+// INCLUD $ REQUIER
+$name ="ahmed saad";
+include("php.php");
+echo($name);
+// INCLUD once $ REQUIER once
+
+include_once ("php.php");
+echo("<br>");
+echo($g);
+ 
+$g = 50;
+
+echo("<br>");
+include_once ("php.php");
+echo("<br>");
+echo($g); 
 
 
-    
+// // ********************
+// if(isset($post['con'])){
+//   $host = 'loclhost';
 
+// } -->
 
+// <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//   <meta charset="UTF-8">
+//   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//   <title>Document</title>
+// </head>
+// <body>
+// <?php
+// $servername = "localhost";
+// $username = "username";
+// $password = "password";
 
+// try {
+//   $conn = new PDO("mysql:host=$servername;dbname=my database", $username, $password);
+ 
+//   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+//   echo "Connected successfully";
+// } catch(PDOException $e) {
+//   echo "Connection failed: " . $e->getMessage();
+// }
+// </body>
+// </html>
 
+// some functions thaat i learnt 
 
+$d = ("karam");
+echo("<br>");
+echo substr($d,2);
 
-
+// *********************
 
 
